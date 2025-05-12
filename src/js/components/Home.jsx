@@ -3,7 +3,7 @@ import React, { useState, useRef } from "react";
 const Home = () => {
 
 	const dominio = "https://playground.4geeks.com"
-	const [songs] = useState([{
+	const songs = [{
 		id: 1,
 		name: "Mario Castle",
 		url: "/sound/files/mario/songs/castle.mp3",
@@ -117,7 +117,7 @@ const Home = () => {
 		url: "/sound/files/cartoons/songs/x-men.mp3",
 		category: "cartoon"
 	}
-	])
+	]
 	const audioRef = useRef(null);
 	const [currentSong, setCurrentSong] = useState(null);
 	const [isPlaying, setIsPlaying] = useState(false);
